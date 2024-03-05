@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "Home"
-    url: https://choiiis.github.io/
+    url: https://ddudad.github.io/
 
   - title: "About"
     url: /about/
 
   - title: "GitHub"
-    url: https://github.com/choiiis
+    url: https://github.com/ddudad
 
   # - title: "Projects"
   #   url: /projects/
@@ -18,25 +18,25 @@ main:
 # sidebar navigation (categories)
 # 2022.09.24 sidebar ver2.0 : main-sub version
 categories:
-  - title: "Title1"
+  - title: "Web"
     children:
-      - title: "Categories1"
-        url: /categories/categories1/
-      - title: "Categories2"
-        url: /categories/categories2/
-      - title: "Categories3"
-        url: /categories/categories3/
-      - title: "Categories4"
-        url: /categories/categories4/
+      - title: "Spring"
+        url: /categories/Spring/
+      # - title: "Categories2"
+      #   url: /categories/categories2/
+      # - title: "Categories3"
+      #   url: /categories/categories3/
+      # - title: "Categories4"
+      #   url: /categories/categories4/
 
-  - title: "Title2"
+  - title: "Algorithm"
     children:
       - title: "Categories5"
         url: /categories/categories5/
       - title: "Categories6"
         url: /categories/categories6/
 
-  - title: "Title3"
+  - title: "DataBase"
     children:
       - title: "Categories7"
         url: /categories/categories7/
