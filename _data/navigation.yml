@@ -21,7 +21,14 @@ categories:
   - title: "Web"
     children:
       - title: "Spring"
-        url: /categories/Spring/
+        url: /categories/spring/
+      - title: "Vue"
+        url: /categories/vue/
+      - title: "Network"
+        url: "Network"
+
+      # - title: "Categories1"
+      #   url: /categories/categories1/
       # - title: "Categories2"
       #   url: /categories/categories2/
       # - title: "Categories3"
@@ -31,12 +38,12 @@ categories:
 
   - title: "Algorithm"
     children:
-      - title: "Categories5"
-        url: /categories/categories5/
-      - title: "Categories6"
-        url: /categories/categories6/
+      # - title: "Categories5"
+      #   url: /categories/categories5/
+      # - title: "Categories6"
+      #   url: /categories/categories6/
 
   - title: "DataBase"
     children:
-      - title: "Categories7"
-        url: /categories/categories7/
+      # - title: "Categories7"
+      #   url: /categories/categories7/
