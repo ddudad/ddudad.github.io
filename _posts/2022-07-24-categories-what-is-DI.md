@@ -17,6 +17,8 @@ last_modified_at: 2024-03-10
 
 [DI(Dependency Injection)을 사용하는 이유](https://ddudad.github.io/web/spring/DI%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0) 에서 왜 DI가 필요한지 알아봤다.  
 이번에는 DI에 대해서 자세히 알아보자.  
+
+---
 ## DI(Dependency Injection)
 
 dipendency injection으로 단어 뜻 그대로 해석하자면 의존 주입이라고 볼 수 있다.  
@@ -126,4 +128,5 @@ public class OrderServiceImpl implements OrderService {
 
 ---
 
+지금까지 Spring에서 사용할 수 있는 3가지 DI방법을 알아보았다.  
 다음에는 Spring이 어떻게 DI를 지원하는지 동작 방식에 대해서 알아보겠다.

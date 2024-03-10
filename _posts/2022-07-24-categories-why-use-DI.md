@@ -45,7 +45,7 @@ last_modified_at: 2024-03-10
 
 ### 오버라이딩 예시
 
-![DI-1-1.png]({{site.url}}\assets\images\posts_img\why_use_DI\DI-1-1.png)
+![DI-1-1.png]({{site.url}}\assets\images\posts_img\why_use_DI\DI-1-1.png)  
 만약 ``MemberService``클래스에 직접적으로 ``MemoryMemberRepository, JdbcMemberRepository`` 중 하나가 구현되어 있다면 ``MemberService``안의 ``Repository``코드를 다 수정해야 변경이 가능할 것이다.  
 
 하지만 ``MemberService`` 클래스가 ``MemberRepository`` 인터페이스를 통해 ``save``기능을 호출할 경우 오버라이딩을 통해 실제 구현체인 ``MemoryMemberRepository, JdbcMemberRepository`` 둘 중 하나의 ``save``함수가 실행될 것이다.  
@@ -71,4 +71,4 @@ public class MemberService {
 
 ---
 
-다음에는 DI에 대해서 알아보겠다.
+지금까지 객체지향 프로그래밍과 SOLID법칙, 자바에서 어떠한 이유로 OCP, DIP를 지킬 수 없는 지 알아봤다. 다음에는 Spring의 DI에 대해서 알아보겠다.

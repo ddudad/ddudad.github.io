@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-07-24-categories-what-is-DI.md",
+                "file": "_posts/2022-07-24-categories-how-regist-spring-bean.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 298.5
   },
   "right": {
     "id": "38f5a92b84b73954",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-07-24-categories-what-is-DI.md",
+                "file": "_posts/2022-07-24-categories-how-regist-spring-bean.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-07-24-categories-what-is-DI.md",
+                "file": "_posts/2022-07-24-categories-how-regist-spring-bean.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-07-24-categories-what-is-DI.md"
+                "file": "_posts/2022-07-24-categories-how-regist-spring-bean.md"
               }
             }
           }
@@ -148,32 +148,33 @@
   },
   "active": "8d97e1dfc76808fd",
   "lastOpenFiles": [
-    "_posts/2022-07-24-categories-why-use-DI.md",
     "_posts/2022-07-24-categories-what-is-DI.md",
-    "assets/images/posts_img/why_use_DI/DI-1-2.png",
-    "assets/images/posts_img/why_use_DI/DI-1-1.png",
+    "_posts/2022-07-24-categories-why-use-DI.md",
+    "_posts/2022-07-24-categories-how-regist-spring-bean.md",
+    "_site/assets/images/posts_img/how-regist-spring-bean/2.png",
+    "_site/assets/images/posts_img/how-regist-spring-bean/1.png",
+    "assets/images/posts_img/how-regist-spring-bean/1.png",
+    "_site/assets/images/posts_img/how-regist-spring-bean/Pasted image 20240310213030.png",
+    "_site/assets/images/posts_img/how-regist-spring-bean/Pasted image 20240310212217.png",
+    "_site/assets/images/posts_img/how-regist-spring-bean",
+    "assets/images/posts_img/how-regist-spring-bean/2.png",
+    "assets/images/posts_img/readme/ver2_1_main.png",
+    "assets/images/posts_img/readme/blog-main-ver2.png",
+    "assets/images/posts_img/readme/blog-main-ver1.png",
+    "assets/images/posts_img/how-regist-spring-bean",
+    "_posts/2022-07-24-categories-template.md",
+    "_site/assets/images/Pasted image 20240310213030.png",
+    "_site/web/spring/Spring이 어떻게 의존성을 주입하는가 자동편.html",
+    "_site/page3/index.html",
+    "_site/page3",
     "_posts/2022-07-24-categories-post-name-here.md",
     "_posts/2022-07-24-categories-post-name-here-7.md",
-    "_posts/2022-07-24-categories-template.md",
-    "assets/images/meee.png",
-    "assets/images/meee.svg",
     "_site/web/spring/DI란.html",
     "_posts/[스프링.md",
     "_site/web/spring/DI를 사용하는 이유.html",
-    "_site/assets/images/posts_img/why_use_DI/DI-1-2.png",
-    "_site/assets/images/posts_img/why_use_DI/DI-1-1.png",
-    "_site/assets/images/posts_img/why_use_DI/Pasted image 20240310102834.png",
-    "_site/assets/images/posts_img/why_use_DI/Pasted image 20240310102304.png",
     "_site/assets/images/posts_img/why_use_DI",
     "assets/images/posts_img/why_use_DI",
-    "_site/assets/images/Pasted image 20240310102834.png",
-    "_site/assets/images/Pasted image 20240310102304.png",
     "_site/web/vue/index.html",
-    "_site/web/vue",
-    "_site/web/spring/index.html",
-    "_site/web/spring/객체지향 프로그래밍이란.html",
-    "_site/web/spring",
-    "_site/web",
     "_posts/2022-07-24-categories-post-name-here-5.md",
     "_posts/2022-07-24-categories-post-name-here-4.md",
     "_posts/2022-07-24-categories-post-name-here-3.md",
