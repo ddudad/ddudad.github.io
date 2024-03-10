@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-07-24-categories-why-use-DI.md",
+                "file": "_posts/2022-07-24-categories-what-is-DI.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-07-24-categories-why-use-DI.md",
+                "file": "_posts/2022-07-24-categories-what-is-DI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-07-24-categories-why-use-DI.md",
+                "file": "_posts/2022-07-24-categories-what-is-DI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-07-24-categories-why-use-DI.md"
+                "file": "_posts/2022-07-24-categories-what-is-DI.md"
               }
             }
           }
@@ -148,12 +148,19 @@
   },
   "active": "8d97e1dfc76808fd",
   "lastOpenFiles": [
-    "_posts/[스프링.md",
     "_posts/2022-07-24-categories-why-use-DI.md",
-    "_site/web/spring/DI를 사용하는 이유.html",
+    "_posts/2022-07-24-categories-what-is-DI.md",
     "assets/images/posts_img/why_use_DI/DI-1-2.png",
-    "_site/assets/images/posts_img/why_use_DI/DI-1-2.png",
     "assets/images/posts_img/why_use_DI/DI-1-1.png",
+    "_posts/2022-07-24-categories-post-name-here.md",
+    "_posts/2022-07-24-categories-post-name-here-7.md",
+    "_posts/2022-07-24-categories-template.md",
+    "assets/images/meee.png",
+    "assets/images/meee.svg",
+    "_site/web/spring/DI란.html",
+    "_posts/[스프링.md",
+    "_site/web/spring/DI를 사용하는 이유.html",
+    "_site/assets/images/posts_img/why_use_DI/DI-1-2.png",
     "_site/assets/images/posts_img/why_use_DI/DI-1-1.png",
     "_site/assets/images/posts_img/why_use_DI/Pasted image 20240310102834.png",
     "_site/assets/images/posts_img/why_use_DI/Pasted image 20240310102304.png",
@@ -167,15 +174,11 @@
     "_site/web/spring/객체지향 프로그래밍이란.html",
     "_site/web/spring",
     "_site/web",
-    "_site/spring/객체지향 프로그래밍이란.html",
-    "_posts/2022-07-24-categories-template.md",
     "_posts/2022-07-24-categories-post-name-here-5.md",
     "_posts/2022-07-24-categories-post-name-here-4.md",
     "_posts/2022-07-24-categories-post-name-here-3.md",
     "_posts/2022-07-24-categories-post-name-here-2.md",
-    "_posts/2022-07-24-categories-post-name-here.md",
     "post_template/2022-07-24-categories-template.md",
-    "_posts/2022-07-24-categories-post-name-here-7.md",
     "_posts/무제 파일.md"
   ]
 }

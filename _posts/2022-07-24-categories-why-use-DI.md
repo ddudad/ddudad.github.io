@@ -10,7 +10,7 @@ toc_sticky: true
 date: 2024-02-01
 last_modified_at: 2024-03-10
 ---
-아래 내용은 김영한 강의를 들으며 이해가 안되던 부분들을 정리한 내용입니다.  
+아래 내용은 김영한님의 강의를 들으며 이해가 안되던 부분들을 정리한 내용입니다.  더 자세한 내용이 궁금하다면 아래 강의를 들어보시는 것을 추천드립니다.  
 [스프링 핵심 원리 - 기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8)  
 
 ---
@@ -26,10 +26,15 @@ last_modified_at: 2024-03-10
 
 ### 좋은 객체 지향 설계의 5가지 원칙
 + SRP(single responsibility principle) : 단일 책임 원칙
+	+ 한 클래스는 하나의 책임만 져야한다.
 + OCP (Open/closed principle) : 개방-폐쇄 원칙
+	+ 확장(인터페이스 구현부 여러개)에는 열려있으나 변경(인터페이스 수정)에는 닫혀있어야 야한다.
 + LSP(Liskov substitution principle) : 리스코프 치환 원칙 
+	+ 인터페이스가 원하는 기능으로 구현체를 생성해야 한다.
 + ISP(Interface segregation principle) : 인터페이스 분리 원칙 
+	+ 인터페이스를 분리할 수 있으면 최대한 분리하자
 + DIP(Dependency inversion principle) : 의존관계 역전 원칙 
+	+ 추상화(인터페이스)에만 의존하고 구체화(구현체)에는 의존하면 안된다
 
 ---
 
@@ -47,7 +52,12 @@ last_modified_at: 2024-03-10
 
 코드를 통해 예시를 들면 다음과 같다.  
 
-![DI-1-2.png]({{site.url}}\assets\images\posts_img\why_use_DI\DI-1-2.png)
+``` java
+public class MemberService {
+	//private MemberRepository memberRepository = new MemoryMemberRepository();
+	private MemberRepository memberRepository = new JdbcMemberRepository();
+}
+```
 
 ``MemberService`` 안에 ``MemberRepository`` 인터페이스를 선언하고, 그 구현체를 바꿔주는 것만으로 ``Repository``를 바꿔서 사용할 수 있게 된다.
 
@@ -55,6 +65,10 @@ last_modified_at: 2024-03-10
 + DIP 위반 : ``MemberService``는 ``MemberRepository``를 의존하지만 ``new``를 통해 구현체를 생성하기 때문에 구현체에도 의존을 하고 있다.
 + OCP 위반 : 구현체를 변경하기 위해서는 ``MemberRepository``의 코드 변경이 불가피하다.
 
-따라서 다형성을 사용하는 것은 의존성과 코드 변경을 최소화로 한 것일 뿐, 의존성과 코드 변경은 불가피하다.  
+따라서 ``new``를 통해 구현체를 직접 생성하는 것은 다형성을 만족한다고 볼 수 있지만, 의존성과 코드 변경을 최소화로 한 것일 뿐 의존성과 코드 변경은 불가피하다.  
 
 스프링에서는 이를 해결하기 위해 나온 것이 ``DI(Dependency Inejction)``이다. ``DI``를 사용할 경우 다형성, OCP, DIP를 지키는 객체지향 설계가 가능해진다.
+
+---
+
+다음에는 DI에 대해서 알아보겠다.
