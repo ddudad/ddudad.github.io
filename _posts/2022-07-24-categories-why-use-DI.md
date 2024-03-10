@@ -12,28 +12,30 @@ last_modified_at: 2024-03-10
 ---
 
 ## 객체 지향 프로그래밍
----
+
 객체 지향 프로그래밍이란 컴퓨터 프로그램을 **객체들의 모임**으로 파악하고자 하는 것이다. 객체는 메시지를 주고받고, 데이터를 처리할 수 있다. 이러한 객체 지향 프로그래밍을 잘 사용할 경우 프로그램을 **유연**하고 **변경이 용이**하게 만들 수 있다.
 
-#### 객체 지향 특징
+### 객체 지향 특징
 + 추상화
 + 캡슐화
 + 상속
 + **다형성**
 
-#### 좋은 객체 지향 설계의 5가지 원칙
+### 좋은 객체 지향 설계의 5가지 원칙
 + SRP(single responsibility principle) : 단일 책임 원칙
 + OCP (Open/closed principle) : 개방-폐쇄 원칙
 + LSP(Liskov substitution principle) : 리스코프 치환 원칙 
 + ISP(Interface segregation principle) : 인터페이스 분리 원칙 
 + DIP(Dependency inversion principle) : 의존관계 역전 원칙 
 
-### 자바 언어의 다형성
 ---
+
+## 자바 언어의 다형성
+
 다형성이란 어떤 기능 (ex. 로그인 검증 방법) 을 변경할 때 쉽게 변경할 수 있도록 하는 것이다.  
 **오버라이딩**을 생각하면 된다.
 
-#### 오버라이딩 예시
+### 오버라이딩 예시
 
 ![DI-1-1.png]({{site.url}}\assets\images\posts_img\why_use_DI\DI-1-1.png)
 만약 ``MemberService``클래스에 직접적으로 ``MemoryMemberRepository, JdbcMemberRepository`` 중 하나가 구현되어 있다면 ``MemberService``안의 ``Repository``코드를 다 수정해야 변경이 가능할 것이다.  
