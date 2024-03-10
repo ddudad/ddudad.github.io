@@ -4,13 +4,16 @@ excerpt: DI(Dependency Injection)은 왜 사용할까
 categories:
   - Spring
 tags: 
-permalink: /web/spring/객체지향 프로그래밍이란
+permalink: /web/spring/DI를 사용하는 이유
 toc: true
 toc_sticky: true
 date: 2024-02-01
 last_modified_at: 2024-03-10
 ---
+아래 내용은 김영한 강의를 들으며 이해가 안되던 부분들을 정리한 내용입니다.  
+[스프링 핵심 원리 - 기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8)  
 
+---
 ## 객체 지향 프로그래밍
 
 객체 지향 프로그래밍이란 컴퓨터 프로그램을 **객체들의 모임**으로 파악하고자 하는 것이다. 객체는 메시지를 주고받고, 데이터를 처리할 수 있다. 이러한 객체 지향 프로그래밍을 잘 사용할 경우 프로그램을 **유연**하고 **변경이 용이**하게 만들 수 있다.
