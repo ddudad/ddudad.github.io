@@ -21,9 +21,9 @@ categories:
   - title: "Web"
     children:
       - title: "Spring"
-        url: /categories/spring/
+        url: /web/spring/
       - title: "Vue"
-        url: /categories/vue/
+        url: /web/vue/
       - title: "Network"
         url: "Network"
 
