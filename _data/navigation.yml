@@ -21,7 +21,7 @@ categories:
   - title: "Web"
     children:
       - title: "Spring"
-        url: /web/spring/
+        url: /web/spring
       - title: "Vue"
         url: /web/vue/
       - title: "Network"
@@ -47,3 +47,8 @@ categories:
     children:
       # - title: "Categories7"
       #   url: /categories/categories7/
+
+  - title: "Project"
+    children:
+      - title: "Online Course"
+        url: /categories/categories7/
