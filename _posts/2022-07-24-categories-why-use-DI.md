@@ -35,14 +35,14 @@ last_modified_at: 2024-03-10
 
 ### 오버라이딩 예시
 
-![DI-1-1.png]({{site.url}}\assets\images\why_use_DI\DI-1-1.jpg)
+![DI-1-1.png]({{site.url}}\assets\images\posts_img\why_use_DI\DI-1-1.jpg)
 만약 ``MemberService``클래스에 직접적으로 ``MemoryMemberRepository, JdbcMemberRepository`` 중 하나가 구현되어 있다면 ``MemberService``안의 ``Repository``코드를 다 수정해야 변경이 가능할 것이다.  
 
 하지만 ``MemberService`` 클래스가 ``MemberRepository`` 인터페이스를 통해 ``save``기능을 호출할 경우 오버라이딩을 통해 실제 구현체인 ``MemoryMemberRepository, JdbcMemberRepository`` 둘 중 하나의 ``save``함수가 실행될 것이다.  
 
 코드를 통해 예시를 들면 다음과 같다.  
 
-![DI-1-2.png]({{site.url}}\assets\images\why_use_DI\DI-1-2.jpg)
+![DI-1-2.png]({{site.url}}\assets\images\posts_img\why_use_DI\DI-1-2.jpg)
 
 ``MemberService`` 안에 ``MemberRepository`` 인터페이스를 선언하고, 그 구현체를 바꿔주는 것만으로 ``Repository``를 바꿔서 사용할 수 있게 된다.
 
