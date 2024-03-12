@@ -98,12 +98,12 @@ public @interface SpringBootApplication {
 + ``@Configuration`` : 수동으로 빈을 등록할 때 사용하는 방식으로 따로 수동편에서 자세히 다루겠다.  
 
 Spring이 컴포넌트를 스캔하고 자동으로 의존성을 주입하는 과정
-1. ![1.png]({{site.url}}\assets\images\posts_img\how-regist-spring-bean\1.png)
-   
+1. 
+   ![1.png]({{site.url}}\assets\images\posts_img\how-regist-spring-bean\1.png)
    빈 이름과 빈 객체를 스프링 빈 저장소에 저장하는 과정이 있는데 이 때 빈 이름은 클래스 명에서 맨 앞 글자만 소문자로 바꾼 이름이 들어가게 되고, 빈 객체는 싱글톤 방식으로 저장이 된다. (프록시 패턴을 통해 싱글톤으로 저장하며 싱글톤으로 저장하는 이유는 싱글톤 관련 글에서 알아보겠다.)
    
-2. ![2.png]({{site.url}}\assets\images\posts_img\how-regist-spring-bean\2.png)
-   
+2. 
+   ![2.png]({{site.url}}\assets\images\posts_img\how-regist-spring-bean\2.png)
    ``@Autowired``가 붙은 곳에서 필요한 인스턴스를 주입하며, 생성자에 파라미터가 많아도 다 찾아서 주입한다.
 
 ---
