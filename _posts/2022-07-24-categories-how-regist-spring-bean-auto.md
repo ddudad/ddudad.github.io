@@ -10,7 +10,7 @@ toc_sticky: true
 date: 2024-02-03
 last_modified_at: 2024-03-10
 ---
-아래 내용은 김영한님의 강의를 들으며 이해가 안되던 부분들을 정리한 내용입니다.  더 자세한 내용이 궁금하다면 아래 강의를 들어보시는 것을 추천드립니다.  
+아래 내용은 김영한님의 강의를 들으며 중요하다고 생각되는 부분들을 정리한 내용입니다.  더 자세한 내용이 궁금하다면 아래 강의를 들어보시는 것을 추천드립니다.  
 [스프링 핵심 원리 - 기본편](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8)  
 
 ---
@@ -18,7 +18,7 @@ last_modified_at: 2024-03-10
 [DI(Dependency Injection)란](https://ddudad.github.io/web/spring/DI%EB%9E%80)에서 DI에 대해서 알아봤다.  
 ``@Autowired``어노테이션을 통해 의존성을 주입받을 수 있다고 했는데 Spring에서 어떤 방식으로 의존성을 주입하는지 알아보자.  
 
-의존성 주입 방식에는 크게 수동, 자동 2가지 방식이 있는데 수동방식에 대해서 알아보겠다.
+의존성 주입 방식에는 크게 수동, 자동 2가지 방식이 있는데 자동방식에 대해서 알아보겠다.
 
 ---
 ## 스프링 빈의 라이프사이클
@@ -83,8 +83,6 @@ public @interface SpringBootApplication {
 
 다음과 같이 구성되어 있고 ``@ComponentScan``이 있는 것을 확인할 수 있는데, Spring의 DI는 이 어노테이션으로 부터 시작된다.  
 
-
-
 ---
 
 ## @ComponentScan
@@ -97,10 +95,28 @@ public @interface SpringBootApplication {
 + ``@Service``
 + ``@Configuration`` : 수동으로 빈을 등록할 때 사용하는 방식으로 따로 수동편에서 자세히 다루겠다.  
 
+## @Component
+
+``@Component``는 스프링 빈으로 관리하려는 클래스에 붙여서 사용하는 어노테이션이다.
+
+``` java
+@Target({ElementType.TYPE})  
+@Retention(RetentionPolicy.RUNTIME)  
+@Documented  
+@Indexed  
+public @interface Component {  
+    String value() default "";  
+}
+```
+
+``@Component``를 들어가면 다음과 같이 되어있는데,  ``@Target({ElementType.TYPE})`` 를 보면 ``ElementType.TYPE``으로 설정되어있기 때문에 클래스, 인터페이스, ENUM에만 ``@Component``를 사용할 수 있다.  
+
+스프링은 ``@Component``가 붙은 클래스를 찾아서 인스턴스를 생성 후 스프링 빈에 등록하며 싱글톤으로 관리한다.
+
 Spring이 컴포넌트를 스캔하고 자동으로 의존성을 주입하는 과정
 1. 
    ![1.png]({{site.url}}\assets\images\posts_img\how-regist-spring-bean\1.png)
-   빈 이름과 빈 객체를 스프링 빈 저장소에 저장하는 과정이 있는데 이 때 빈 이름은 클래스 명에서 맨 앞 글자만 소문자로 바꾼 이름이 들어가게 되고, 빈 객체는 싱글톤 방식으로 저장이 된다. (프록시 패턴을 통해 싱글톤으로 저장하며 싱글톤으로 저장하는 이유는 싱글톤 관련 글에서 알아보겠다.)
+   빈 이름과 빈 객체를 스프링 빈 저장소에 저장하는 과정이 있는데 이 때 빈 이름은 클래스 명에서 맨 앞 글자만 소문자로 바꾼 이름이 들어가게 되고, 빈 객체는 싱글톤 방식으로 저장이 된다. 
    
 2. 
    ![2.png]({{site.url}}\assets\images\posts_img\how-regist-spring-bean\2.png)
