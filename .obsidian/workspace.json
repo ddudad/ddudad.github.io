@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-07-24-categories-how-regist-spring-bean.md",
+                "file": "_posts/2022-07-24-categories-how-regist-spring-bean-manual.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 370.5
+    "width": 369.5
   },
   "right": {
     "id": "38f5a92b84b73954",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-07-24-categories-how-regist-spring-bean.md",
+                "file": "_posts/2022-07-24-categories-how-regist-spring-bean-manual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-07-24-categories-how-regist-spring-bean.md",
+                "file": "_posts/2022-07-24-categories-how-regist-spring-bean-manual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-07-24-categories-how-regist-spring-bean.md"
+                "file": "_posts/2022-07-24-categories-how-regist-spring-bean-manual.md"
               }
             }
           }
@@ -146,10 +146,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "8d97e1dfc76808fd",
+  "active": "112576125ef8351b",
   "lastOpenFiles": [
+    "_posts/2022-07-24-categories-how-regist-spring-bean-auto.md",
+    "_posts/2022-07-24-categories-how-regist-spring-bean-manual.md",
     "_posts/2022-07-24-categories-what-is-DI.md",
-    "_posts/2022-07-24-categories-how-regist-spring-bean.md",
     "_posts/2022-07-24-categories-why-use-DI.md",
     "_site/web/spring/DI 사용방법.html",
     "_posts/2022-07-24-categories-post-name-here.md",
