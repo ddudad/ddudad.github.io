@@ -1,10 +1,10 @@
 ---
-title: DI(Dependency Injection)란
-excerpt: DI(Dependency Injection)를 알아보자
+title: Spring에서 DI(Dependency Injection) 사용방법
+excerpt: DI(Dependency Injection) 사용방법을 알아보자
 categories:
   - Spring
 tags: 
-permalink: /web/spring/DI란
+permalink: /web/spring/DI 사용방법
 toc: true
 toc_sticky: true
 date: 2024-02-02
@@ -99,7 +99,7 @@ public class OrderServiceImpl implements OrderService {
 	public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) { 
 		this.memberRepository = memberRepository; 
 		this.discountPolicy = discountPolicy; 
-		} 
+	} 
 }
 ```
 
@@ -111,7 +111,7 @@ public class OrderServiceImpl implements OrderService {
 + 필드에 ``final``을 사용할 수 있어 혹여나 주입을 놓쳤을 경우 컴파일 과정에서 오류로 알아챌 수 있다.
 + ``Lombok`` 라이브러리와 ``@RequiredArgsConstructor``를 함께 활용할 경우 코드가 매우 깔끔해 질 수 있다.
 
-#### Lombok 라이브러리 + @RequiredArgsConstructor 어노테이션 조합
+#### Lombok 라이브러리(@Getter + @Setter + @RequiredArgsConstructor)
 
 ``` java
 @Component 
