@@ -50,5 +50,5 @@ categories:
 
   - title: "Project"
     children:
-      - title: "Online Course"
-        url: /categories/categories7/
+      - title: "WebClass"
+        url: /project/webClass
