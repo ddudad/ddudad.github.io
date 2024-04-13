@@ -47,6 +47,13 @@ categories:
     children:
       # - title: "Categories7"
       #   url: /categories/categories7/
+  
+  - title: "Design Pattern"
+    children:
+      - title: "생성 패턴"
+        url: /DesignPattern/creational
+      - title: "구조 패턴"
+        url: /DesignPattern/structural
 
   - title: "Project"
     children:
