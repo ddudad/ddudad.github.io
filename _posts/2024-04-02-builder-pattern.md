@@ -4,7 +4,7 @@ except: 빌더 패턴을 알아보자
 categories:
   - 생성 패턴
 tags: 
-permalink: /DesignPattern/creational/Builderpattern
+permalink: /Design Pattern/Creational/Builder pattern
 toc: true
 toc_sticky: true
 date: 2024-04-13
