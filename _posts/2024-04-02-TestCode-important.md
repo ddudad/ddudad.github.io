@@ -1,6 +1,6 @@
 ---
 title: 테스트 코드의 중요성
-except: 테스트 코드의 중요성을 경험하다.
+excerpt: 테스트 코드의 중요성을 경험하다.
 categories:
   - WebClass
 tags: 
