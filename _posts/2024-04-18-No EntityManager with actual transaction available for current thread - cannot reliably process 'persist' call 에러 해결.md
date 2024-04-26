@@ -1,5 +1,5 @@
 ---
-title: 2024-04-18-No EntityManager with actual transaction available for current thread - cannot reliably process 'persist' call 에러 해결
+title: No EntityManager with actual transaction available for current thread - cannot reliably process 'persist' call 에러 해결
 excerpt: gugumo 진행 중 에러 해결
 categories:
   - gugumo
