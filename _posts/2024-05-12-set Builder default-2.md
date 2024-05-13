@@ -1,5 +1,5 @@
 ---
-title: "@Builder default 값 지정 방법"
+title: "@Builder default 값 지정 방법 2"
 excerpt: "@Builder.Default"
 categories:
   - gugumo
