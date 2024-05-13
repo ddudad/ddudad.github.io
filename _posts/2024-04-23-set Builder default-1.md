@@ -4,11 +4,11 @@ excerpt: "@Builder.Default"
 categories:
   - gugumo
 tags: 
-permalink: /project/gugumo/Builder default 값 지정
+permalink: /project/gugumo/Builder-default-value-1
 toc: true
 toc_sticky: true
 date: 2024-04-23
-last_modified_at: 2024-04-23
+last_modified_at: 2024-05-12
 ---
 아래 내용은 사이드 프로젝트(gugumo)를 진행하면서 겪은 문제를 정리한 것입니다.  
 
