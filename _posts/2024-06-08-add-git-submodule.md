@@ -143,8 +143,7 @@ Error starting ApplicationContext. To display the condition evaluation report re
 ```
 
 github action을 통한 cicd를 사용 중이었는데 ec2에서 다음과 같은 에러가 발생하면서 spring이 동작하지 않는 이슈가 발생했다.  
-위의 에러와 함께 데이터베이스도 local에서만 실행하는 h2로 동작하는 것을 확인했다.  
-
+위의 에러와 함께 데이터베이스도 local에서만 실행하는 h2로 동작하는 것도 이상하고, `application.yml`에서 데이터를 전혀 파싱하지 못하는 현상도 있었기에 `application.yml`이 `src/main/resources`에 제대로 복사되지 않는 현상으로 파악했다.  
 
 github action에서 빌드할 때 submodule을 복사하는 작업을 먼저 진행하도록 해서 해결
 
