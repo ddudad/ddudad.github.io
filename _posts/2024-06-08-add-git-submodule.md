@@ -164,6 +164,10 @@ github action에서 빌드할 때 submodule을 복사하는 작업을 먼저 진
 public 리포지토리에 push할 시점에 등록했던 submodule 의 commit 정보만을 가져온다.  
 한번 push한 코드는 properties 리포지토리를 아무리 바꿔도 최신 버전으로 가져오지를 않는다.  
 
+이러면 개발 후 `master` 브랜치로 머지할 때 최신 properties를 참조하고 있는지 확인할 필요가 있겠다.  
+
+아마도 github aciton에서 어떻게 하면 최신 properties를 가져올 수 있게 할 수 있는 듯 하지만 아직 적용을 해보지는 않았다.  
+
 매번 새로운 브랜치에서 작업을 진행하기 때문에 크게 문제가 되지는 않을 것 같지만 유의하면서 개발해야겠다.  
 
 
