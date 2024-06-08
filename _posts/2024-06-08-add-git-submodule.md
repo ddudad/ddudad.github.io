@@ -52,7 +52,7 @@ open 리포지토리에 노출되어서는 안되는 정보들이 있을 때 그
 + public 프로젝트 최상위 경로에서 private 리포지토리를 submodule로 저장한다.
    + `git submodule add {private 리포지토리 주소} {원하는 경로}
 	 
-	 필자의 경우 config라는 이름으로 프로젝트 root 경로에서 진행하였다.
+	 필자의 경우 config라는 이름으로 프로젝트 root 경로에서 진행하였다.  
 		 `git submodule add https://github.com/gugumo-service/gugumo_properties.git config`
 		![]({{site.url}}\assets/images/posts_img/add-git-submodule/3.png)
 		 프로젝트에서 확인할 경우 폴더로 생셩된 것을 확인할 수 있을 것이다.
@@ -91,6 +91,8 @@ submodule은 리포지토리의 HEAD를 참조하는 것이 아닌 commit을 참
 
 이럴 때에는 다음 명령어를 통해 참조하는 commit을 업데이트할 수 있다.  
 `git submodule update --remote`  
+
+업데이트 이후에는 public 리포지토리에서 `commit, pull` 작업을 진행해야 다음에 public 리포지토리를 받고 submodule을 적용할 때 최신 내역으로 받을 수 있다.  
 
 
 프로젝트를 진행 도중에 submodule에 저장한 내용이 바뀔 경우 해당 경로로 가서 commit, push를 진행해야 한다.  만일 그렇지 않을 경우 다른 사용자는 바뀌기 이전의 정보를 가져다가 사용하는 일이 발생할 수도 있다.  
