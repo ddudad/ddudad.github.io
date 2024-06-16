@@ -8,7 +8,7 @@ permalink: /project/gugumo/Builder-default-value-2
 toc: true
 toc_sticky: true
 date: 2024-05-12
-last_modified_at: 2024-05-12
+last_modified_at: 2024-06-16
 ---
 아래 내용은 사이드 프로젝트(gugumo)를 진행하면서 겪은 문제를 정리한 것입니다.  
 
@@ -63,10 +63,41 @@ return new Member(this.username, this.password, this.nickname, "/default", Membe
 
 설명에서는 `User` 만 예시로 들었지만, 기본으로 지정하는 값을 바꿔줄 경우 `Admin, Manager` 등 여러 역할의 `Member`를 Builder패턴을 이용하여 생성할 수 있다.  
 
---- 
+---
 
+**2024/06/16 내용 추가**
+## Builder 옵션 사용
 
-여러 자료를 찾아보고 구현한 방식이지만 더 좋은 방법이 있을 것이고 그 방법을 찾을 경우 수정할 예정이다.  
+`Builder` 어노테이션 옵션 중에서 `builderClassName, builderMethodName` 옵션이 있다.  
+
++ `builderClassName` : builder 패턴을 사용해서 반환되는 클래스의 이름을 변경할 수 있다.  
++ `builderMethodName` : builder 패턴을 사용할 때 기본으로 `build()`를 사용해서 시작하는데, 이 함수 명을 변경할 수 있다.  
+
+``` java
+@Builder(builderClassName = "UserJoin", builderMethodName = "userJoin")  
+public Member(Long id) {  
+    this.id = id;  
+    this.role = MemberRole.ROLE_USER;  
+    this.status = MemberStatus.active;  
+}
+```
+
+위와 같은 코드처럼 `id`값은 외부에서 받아와서 설정하지만, `role, status` 는 특정 값을 직접 설정해서 `userJoin`을 통해 구현할 때는 기본 값을 설정할 수 있다.  
+
+사용법
+``` java
+id = 1;
+Member joinMember = Member.userJoin()  
+        .id(id)
+        .build();
+```
+
+`builderClassName, builderMethodName`을 통해서 builder를 여러 개 설정할 수 있다.  
+
+---
+
+처음 게시글을 작성할 때 더 좋은 방법이 있다면 추가하겠다고 했었는데 이제서야 추가했다.  
+그래도 더 좋은 방법을 알게 되어서 다행이다.  
 
 
 
